@@ -1,0 +1,21 @@
+{
+  "name": "bon-bonite-qa-automation",
+  "version": "1.0.0",
+  "description": "Automatización QA con Playwright + TypeScript (POM) para bon-bonite.com",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:registro": "playwright test tests/01-registro.spec.ts",
+    "test:edicion": "playwright test tests/02-edicion-cuenta.spec.ts",
+    "test:compra": "playwright test tests/03-compra-producto.spec.ts",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.20.2",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.7.2"
+  }
+}
